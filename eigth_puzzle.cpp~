@@ -69,7 +69,7 @@ int main() {
 			std::swap(tmp.at(empty_index), tmp.at(empty_index-3));
 			if (discoveredSet.count(tmp) != 1 &&
 					std::find(searchQueue.begin(), searchQueue.end(), tmp) == searchQueue.end()) {
-				searchQueue.push_back(tmp);	
+				searchQueue.push_front(tmp);	
 			}		
 			std::swap(tmp.at(empty_index), tmp.at(empty_index-3));
 		}
@@ -78,7 +78,7 @@ int main() {
 			std::swap(tmp.at(empty_index), tmp.at(empty_index+3));
 			if (discoveredSet.count(tmp) != 1 &&
 					std::find(searchQueue.begin(), searchQueue.end(), tmp) == searchQueue.end()) {
-				searchQueue.push_back(tmp);	
+				searchQueue.push_front(tmp);	
 			}		
 			std::swap(tmp.at(empty_index), tmp.at(empty_index+3));	
 		}
@@ -87,7 +87,7 @@ int main() {
 			std::swap(tmp.at(empty_index), tmp.at(empty_index-1));
 			if (discoveredSet.count(tmp) != 1 &&
 					std::find(searchQueue.begin(), searchQueue.end(), tmp) == searchQueue.end()) {
-				searchQueue.push_back(tmp);	
+				searchQueue.push_front(tmp);	
 			}		
 			std::swap(tmp.at(empty_index), tmp.at(empty_index-1));
 		}
@@ -96,7 +96,7 @@ int main() {
 			std::swap(tmp.at(empty_index), tmp.at(empty_index+1));
 			if (discoveredSet.count(tmp) != 1 &&
 					std::find(searchQueue.begin(), searchQueue.end(), tmp) == searchQueue.end()) {
-				searchQueue.push_back(tmp);	
+				searchQueue.push_front(tmp);	
 			}		
 			std::swap(tmp.at(empty_index), tmp.at(empty_index+1));
 		}
