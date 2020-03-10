@@ -2,7 +2,7 @@
  * HOMEWORK 1
  * Aim: Solve the 8-Puzzle using Breadth-First Search algorithm
  *
- * Author: Şükrücan Taylan Işıkoğlu
+ * Author: Sukrucan Taylan Isikoglu
  **/
 #include <vector>
 #include <deque>
