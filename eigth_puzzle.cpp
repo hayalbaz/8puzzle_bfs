@@ -16,7 +16,7 @@ std::vector<int> state{2, 8, 3, 1, 6, 4, 7, -1, 5};
 std::vector<int> endState{1, 2, 3, 8, -1, 4, 7, 6, 5};
 
 //Holds the states we will discover
-//We use a double ended queue as a FIFO by pushing and popping from front of the queue at all times
+//We use a double ended queue as a FIFO by pushing from front of the queue and popping at the back of the queue 
 std::deque<std::vector<int>> searchQueue;
 //Holds the states that are already discovered
 //We use a set since searching existing elements is a O(logn) operation
